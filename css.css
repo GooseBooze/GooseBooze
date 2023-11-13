@@ -15,6 +15,6 @@ body{
 .pflex {
     display: flex;
 }
-section {
-    background-color: srgba(100, 122, 100, 0.616);
+.section.top {
+    height: 300px;
 }
