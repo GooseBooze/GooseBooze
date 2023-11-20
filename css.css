@@ -4,6 +4,7 @@ footer {
     background-color: #333;
     color: white;
 }
+
 body{
     background-image: url(Images/foggy-forest-aesthetic-5z1p1xgxp601txwt.jpg);
 
@@ -34,9 +35,15 @@ footer {
 header {
     text-align: center;
 }
+
 @media (max-width: 600px) {
     .row {
         -webkit-flex-direction: column;
         flex-direction: column;
     }
+}
+
+.column {
+    padding: 10px;
+    height: 300px;
 }
