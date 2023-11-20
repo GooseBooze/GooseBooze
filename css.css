@@ -1,9 +1,4 @@
-footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: #333;
-    color: white;
-}
+
 
 body{
     background-image: url(Images/foggy-forest-aesthetic-5z1p1xgxp601txwt.jpg);
@@ -51,14 +46,13 @@ body{
     -ms-flex: 2;
     flex: 2;
   }
-  
   /* Style the footer */
   .footer {
-    background-color: #f1f1f1;
-    padding: 10px;
     text-align: center;
-  }
-  
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+}
   /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
   @media (max-width: 600px) {
     .row {
