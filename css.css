@@ -14,3 +14,11 @@ body{
 .section.top {
     height: 300px;
 }
+
+footer {
+    text-align: center;
+}
+
+header{
+    text-align: center;
+}
