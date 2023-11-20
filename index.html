@@ -6,23 +6,26 @@
     <link rel="stylesheet" href="css.css" href="Scripts.js">
     <title>Document</title>
 </head>
+</head>
 <body>
-    <header>
-        <h1>Hovedside</h1>
 
-    </header>
-    <main>
-<div class=".column.middle">
-    <h1>Info</h1>
-        <p>Dette er en nettside ment som en oppgave i konseptutvikling der jeg skal skrive om interessene mine.</p>
-    </div>
-<div class=".column.side">
-    <p>text</p>
+<h2>CSS Template using Flexbox</h2>
+<p>In this example, we have created a header, three unequal columns and a footer. On smaller screens, the columns will stack on top of each other. Resize the browser window to see the responsive effect.</p>
+<p><strong>Note:</strong> Flexbox is not supported in Internet Explorer 10 and earlier versions.</p>
+
+<div class="header">
+  <h2>Header</h2>
 </div>
-<div class=".column.side">
-    <p>text</p>
+
+<div class="row">
+  <div class="column side" style="background-color:#aaa;">Column</div>
+  <div class="column middle" style="background-color:#bbb;">Column</div>
+  <div class="column side" style="background-color:#ccc;">Column</div>
 </div>
-    </main>
-    <footer class="flex-footer"><p>Gard N. Ulvestad</p><a href="https://github.com/GooseBooze">github/GooseBooze</a></footer>
+
+<div class="footer">
+  <p>Footer</p>
+</div>
+
 </body>
 </html>
