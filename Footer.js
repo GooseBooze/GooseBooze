@@ -6,7 +6,7 @@ class FooterComponent extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
         <footer>
-            <p><i><a>https://github.com/GooseBooze</a></p>
+            <p><i><a href="https://github.com/GooseBooze">https://github.com/GooseBooze</a></p>
         </footer>
         `;
     }
