@@ -8,9 +8,7 @@ body{
     background-image: url(Images/foggy-forest-aesthetic-5z1p1xgxp601txwt.jpg);
 
 }
-.pflex {
-    display: flex;
-}
+
 .section.top {
     height: 300px;
 }
@@ -19,6 +17,6 @@ footer {
     text-align: center;
 }
 
-header{
+header {
     text-align: center;
 }
