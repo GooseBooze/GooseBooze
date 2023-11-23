@@ -13,9 +13,9 @@
   .header {
     background-color: #f1f1f1;
     padding: 2px;
-    text-align: center;
+    text-justify: center;
     font-size: 32px;
-    height: 5vh;
+    height: 10vh;
   }
   
   /* Container for flexboxes */
