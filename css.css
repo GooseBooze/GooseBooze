@@ -27,7 +27,10 @@
   /* Create three unequal columns that sits next to each other */
   .column {
     padding: 10px;
-    height: 90vh; /* Should be removed. Only for demonstration */
+    height: 90vh;
+
+    /* Should be rem
+    oved. Only for demonstration */
   }
   
   /* Left and right column */
@@ -38,6 +41,7 @@
      margin-top: 1px;
      margin-left: 1px;
      margin-right: 1px;
+     column-width: 100px;
   }
   
   /* Middle column */
