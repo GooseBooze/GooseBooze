@@ -63,6 +63,11 @@
 
 }
 
+nav-component {
+  justify-content: center;
+  background-color: #666;
+}
+
 h1 {
   font-family: 'Cascadia Code', 'Inconsolata', 'Consolas';
   
