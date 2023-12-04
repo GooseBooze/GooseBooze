@@ -8,6 +8,9 @@
     viewport-fit: 100vh;
     /*https://unsplash.com/photos/aerial-shot-of-forest-2Hzmz15wGik*/
     font-family: 'Cascadia Code', 'Inconsolata', 'Consolas';
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
   }
   
   /* Style the header */
