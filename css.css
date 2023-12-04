@@ -63,28 +63,8 @@
 }
 
 h1 {
-  font-family: Tahoma, Calibri, Helvetica;
+  font-family: Helvetica;
 }
-
-h2 {
-  font-family: Tahoma, Calibri, Helvetica;
-}
-
-h3 {
-  font-family: Tahoma, Calibri, Helvetica;
-}
-h4 {
-  font-family: Tahoma, Calibri, Helvetica;
-}
-
-h5 {
-  font-family: Tahoma, Calibri, Helvetica;
-}
-
-h6 {
-  font-family: Tahoma, Calibri, Helvetica;
-}
-
   /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
   @media (max-width: 600px) {
     .row {
