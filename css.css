@@ -20,6 +20,26 @@
     margin-bottom: 3px;
   }
   
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #666;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
   /* Container for flexboxes */
   .row {
     display: -webkit-flex;
@@ -63,10 +83,7 @@
 
 }
 
-nav-component {
-  justify-content: center;
-  background-color: #666;
-}
+
 
 h1 {
   font-family: 'Cascadia Code', 'Inconsolata', 'Consolas';
