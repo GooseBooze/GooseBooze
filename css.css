@@ -14,8 +14,9 @@
     background-color: #444;
     padding: 2px;
     text-align: center;
-    font-size: 32px;
+    font-size: 28px;
     color: white;
+    margin-bottom: 3px;
   }
   
   /* Container for flexboxes */
@@ -36,7 +37,7 @@
      -webkit-flex: 1;
      -ms-flex: 1;
      flex: 1;
-     margin-top: 6px;
+     margin-top: 3px;
      margin-left: 3px;
      margin-right: 3px;
   }
@@ -46,7 +47,7 @@
     -webkit-flex: 2;
     -ms-flex: 2;
     flex: 2;
-    margin-top: 6px;
+    margin-top: 3px;
     margin-left: 3px;
     margin-right: 3px;
   }
