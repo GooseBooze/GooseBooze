@@ -1,12 +1,10 @@
-.game-grid {
-    display: grid;
-    grid-template-columns: repeat(6, minmax(250px, 1fr));
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+flex-container {
     gap: 50px;
     margin: 30px;
 }
 
 .game-item {
+    display: flex;
     overflow: hidden;
     border: 1px solid #ddd;
     border-radius: 5px;
