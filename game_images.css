@@ -1,6 +1,7 @@
 flex-container {
     gap: 50px;
     margin: 30px;
+    flex-direction: row;
 }
 
 .game-item {
