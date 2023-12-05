@@ -26,3 +26,8 @@ flex-container {
     text-align: center;
     font-size: 24px;
 }
+
+img {
+    width: 350px;
+    height: 525px;
+}
