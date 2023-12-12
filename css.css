@@ -51,8 +51,7 @@
   /* Create three unequal columns that sits next to each other */
   .column {
     padding: 10px;
-    height: 82vh; /* Should be rem
-    oved. Only for demonstration */
+    height: 82vh;
   }
   
   /* Left and right column */
