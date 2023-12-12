@@ -1,7 +1,7 @@
 flex-container {
     gap: 50px;
     margin: 30px;
-    flex-direction: column;
+    flex-direction: row;
     display: flex;
 }
 
