@@ -8,3 +8,7 @@ flex-container {
 .images.item {
     size: 250px 425px;
 }
+
+title {
+    align-items: center;
+}
