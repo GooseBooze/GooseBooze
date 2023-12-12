@@ -6,6 +6,7 @@ flex-container {
 }
 
 .images.item {
+    display: flex;
     size: 250px 425px;
 }
 
