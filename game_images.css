@@ -16,7 +16,7 @@ flex-container {
 .game-item img {
     max-width: 100%;
     height: 100%;
-    display: block;
+    display: flex;
 }
 
 .game-item:hover {
