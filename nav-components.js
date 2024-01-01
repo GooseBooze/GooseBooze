@@ -5,12 +5,14 @@ class NavComponent extends HTMLElement {
 
     connectedCallback() {
         this.innerHTML = `
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home Page</a></li>
-                    <li><a href="Page2.html">Game Library</a></li>
-                </ul>
-            </nav>
+            <nav-components>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home Page</a></li>
+                        <li><a href="Page2.html">Game Library</a></li>
+                    </ul>
+                </nav>
+            </nav-components>
         `;
     }
 }
