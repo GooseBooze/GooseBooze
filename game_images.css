@@ -4,9 +4,6 @@
 }
 .gridbox {
     display: block;
-}
-
-.gridbox img {
     height: 300px;
     width: 150px;
 }
