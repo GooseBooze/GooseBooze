@@ -5,7 +5,7 @@ flex-container {
     display: flex;
 }
 
-.Images.item {
+.Images.item img{
     display: flex;
     size: 250px 425px;
 }
