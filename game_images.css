@@ -1,6 +1,6 @@
 .gridcontainer {
     display: grid;
-
+    grid-template-columns: auto auto auto;
 }
 .gridbox {
     display: block;
