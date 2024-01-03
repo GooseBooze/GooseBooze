@@ -33,6 +33,10 @@
     display: -webkit-flex;
     display: flex;
   }
+
+  .infobox {
+    display: block;
+  }
   
   /* Create three unequal columns that sits next to each other */
   .column {
