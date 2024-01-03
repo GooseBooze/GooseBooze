@@ -1,20 +1,12 @@
+.gridcontainer {
+    display: grid;
 
-
-
-flex-container {
-    gap: 50px;
-    margin: 30px;
-    flex-direction: row;
-    display: flex;
+}
+.gridbox {
+    display: block;
 }
 
-
-
-.Images.item {
-    display: flex;
-    size: 250px 425px;
-}
-
-title {
-    align-items: center;
+.gridbox img {
+    height: 300px;
+    width: 150px;
 }
