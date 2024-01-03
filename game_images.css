@@ -1,9 +1,16 @@
+
+.infobox {
+    display: block;
+  }
+
 flex-container {
     gap: 50px;
     margin: 30px;
     flex-direction: row;
     display: flex;
 }
+
+
 
 .Images.item img{
     display: flex;
