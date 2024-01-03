@@ -1,7 +1,5 @@
 
-.infobox {
-    display: block;
-  }
+
 
 flex-container {
     gap: 50px;
@@ -12,7 +10,7 @@ flex-container {
 
 
 
-.Images.item img{
+.Images.item {
     display: flex;
     size: 250px 425px;
 }
@@ -20,3 +18,6 @@ flex-container {
 title {
     align-items: center;
 }
+.infobox {
+    display: block;
+  }
