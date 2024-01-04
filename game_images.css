@@ -1,9 +1,13 @@
 .gridcontainer {
     display: grid;
     grid-template-columns: auto auto auto;
-    grid-template-rows: 30% 60%;
 }
 .gridbox {
     display: block;
 
+}
+
+.gridbox img {
+    width: 40%;
+    height: 60%;
 }
