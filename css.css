@@ -44,6 +44,7 @@
   .column.side {
      -webkit-flex: 1;
      -ms-flex: 1;
+     background-color:#bbbbbb9a;
      flex: 1;
      margin-top: 3px;
      margin-left: 3px;
@@ -54,6 +55,7 @@
   .column.middle {
     -webkit-flex: 2;
     -ms-flex: 2;
+    background-color:#bbbbbb9a;
     flex: 2;
     margin-top: 3px;
     margin-left: 3px;
