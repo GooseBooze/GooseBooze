@@ -18,11 +18,15 @@
     <div id="comment-form">
         <h2>Add a Comment</h2>
         <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" required>
+            <div class="input-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+            </div>
 
-            <label for="comment">Comment:</label>
-            <textarea id="comment" rows="4" required></textarea>
+            <div class="input-group">
+                <label for="comment">Comment:</label>
+                <textarea id="comment" rows="4" required></textarea>
+            </div>
 
             <button type="button" onclick="submitComment()">Submit Comment</button>
         </form>
