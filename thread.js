@@ -30,6 +30,8 @@ function saveComment(comment) {
 
     // Save the updated comments back to cookies
     setCommentsToCookies(existingComments);
+
+    console.log("Comment saved:", comment);
 }
 
 function displayComment(comment) {
@@ -40,6 +42,8 @@ function displayComment(comment) {
     newComment.innerHTML = '<strong>' + comment.name + ':</strong> ' + comment.comment;
 
     commentSection.appendChild(newComment);
+
+    console.log("Comment displayed:", comment);
 }
 
 function clearInputFields(...inputs) {
@@ -56,6 +60,8 @@ function setCommentsToCookies(comments) {
     expirationDate.setFullYear(expirationDate.getFullYear() + 1); // Expires in one year
 
     document.cookie = 'comments=' + encodeURIComponent(JSON.stringify(comments)) + '; expires=' + expirationDate.toUTCString() + '; path=/';
+
+    console.log("Comments set to cookies:", comments);
 }
 
 // Load existing comments from cookies when the page loads
@@ -64,4 +70,6 @@ window.onload = function () {
     existingComments.forEach(function (comment) {
         displayComment(comment);
     });
+
+    console.log("Existing comments loaded:", existingComments);
 };
