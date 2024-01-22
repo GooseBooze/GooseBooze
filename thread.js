@@ -15,24 +15,13 @@ function submitComment() {
 
     if (name && comment) {
         // Your existing comment submission logic here
+        displayComment({ name: name, comment: comment });
 
         // Clear the input fields
         clearInputFields(nameInput, commentInput, captchaInput);
     } else {
         alert('Please enter both your name and a comment.');
     }
-}
-
-function getCorrectCaptcha() {
-    // Generate a simple addition problem for the captcha
-    var num1 = Math.floor(Math.random() * 10) + 1;
-    var num2 = Math.floor(Math.random() * 10) + 1;
-
-    // Display the captcha question in the form
-    document.getElementById('captcha-question').innerText = num1 + ' + ' + num2;
-
-    // Return the correct answer
-    return num1 + num2;
 }
 
 function displayComment(comment) {
@@ -49,37 +38,19 @@ function clearInputFields(...inputs) {
     inputs.forEach(input => (input.value = ''));
 }
 
-function getCookieExpiration() {
-    var date = new Date();
-    date.setTime(date.getTime() + (7 * 24 * 60 * 60 * 1000)); // Set expiration to 7 days
-    return date.toUTCString();
+function getCorrectCaptcha() {
+    // Generate a simple addition problem for the captcha
+    var num1 = Math.floor(Math.random() * 10) + 1;
+    var num2 = Math.floor(Math.random() * 10) + 1;
+
+    // Display the captcha question in the form
+    document.getElementById('captcha-question').innerText = num1 + ' + ' + num2;
+
+    // Return the correct answer
+    return num1 + num2;
 }
 
 // Load existing comments from cookies when the page loads
 window.onload = function () {
-    var allCookies = document.cookie.split('; ');
-
-    for (var i = 0; i < allCookies.length; i++) {
-        var cookie = allCookies[i].split('=');
-        if (cookie[0].startsWith('comment_')) {
-            var commentObject = JSON.parse(cookie[1]);
-            displayComment(commentObject);
-        }
-    }
+    // Your existing code for loading comments here
 };
-
-function createCommentElement(name, comment) {
-    var commentContainer = document.createElement('div');
-    commentContainer.classList.add('comment');
-
-    var commentContent = document.createElement('p');
-    commentContent.innerHTML = '<strong>' + name + ':</strong> ' + comment;
-
-    commentContainer.appendChild(commentContent);
-
-    return commentContainer;
-}
-
-function clearInputFields(...inputs) {
-    inputs.forEach(input => (input.value = ''));
-}
