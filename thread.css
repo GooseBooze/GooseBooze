@@ -1,31 +1,50 @@
+
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
+    display: flex;
+    justify-content: space-between;
 }
 
 #comments-section {
     max-width: 600px;
-    margin: 0 auto;
 }
 
 #comments {
     margin-top: 10px;
 }
 
+.comment-container {
+    display: flex;
+    flex-direction: column-reverse; /* Display comments in reverse order (newest first) */
+}
+
+.comment {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
 #comment-form {
-    max-width: 600px;
-    margin: 20px auto;
+    max-width: 400px;
+}
+
+.input-group {
+    margin-bottom: 15px;
 }
 
 label {
     display: block;
-    margin-top: 10px;
+    margin-bottom: 5px;
 }
 
 input,
 textarea {
     width: 100%;
+    padding: 8px;
     margin-bottom: 10px;
+    box-sizing: border-box;
 }
 
 button {
@@ -38,13 +57,4 @@ button {
 
 button:hover {
     background-color: #45a049;
-}
-.input-group {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 15px;
-}
-
-.input-group label {
-    margin-bottom: 5px;
 }
