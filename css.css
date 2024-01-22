@@ -45,7 +45,7 @@ body::before {
 .container {
   display: flex;
   flex: 1;
-  justify-content: space-around; /* Align columns with equal spacing */
+  justify-content: space-around;
 }
 
 .column.side,
@@ -61,7 +61,7 @@ body::before {
 }
 
 .column.middle {
-  flex: 2;
+  flex: 3; /* Adjusted to take 3/5 of the horizontal space */
   margin: 3px;
 }
 
