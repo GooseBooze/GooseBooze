@@ -10,6 +10,8 @@
     font-family: 'Cascadia Code', 'Consolas', 'Inconsolata';
     margin: 0;
     padding: 0;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
   }
   
   /* Style the header */
