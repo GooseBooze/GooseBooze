@@ -4,43 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="thread.css">
+    <link rel="stylesheet" href="thread.js">
 
 </head>
 <body>
-    <form id="form" action="javascript:void('');" class="add_comment">
+    <div id="comments">
+        <!-- Existing comments go here -->
+    </div>
 
-        <label>Name
-          <input id="name" type="string" name="name">
-        </label><br>
-        <label>Email
-          <input id="email" type="string" name="email">
-        </label><br>
-        <label>Comment
-         <textarea id="comment" name="comment"></textarea>
-        </label>
-        <input type="submit" value="Add Comment">
-      </form>
-<script>
-    $(function(){
-    $("#form").submit(function(e){
-        // Create data object
-        var data = {};
-        data.name = $("#name").val();
-        data.email = $("#email").val();
-        data.comment = $("#comment").val();
-        // The url of your server-side script that handles the post submission
-        var url = "http://www.someurl.com/post_comment.php";
-        $.POST(url, data)
-        .done(function(response){
-            // This code executes when the server returns a response
-            // Do something with the response like adding the comment to the current list of comments
-            // Example (if your response is HTML, better would be a JSON string):
-            $("#comments").append(response);
-        });
-        e.preventDefault();
-    });
-});
-</script>
+    <div id="comment-form">
+        <h2>Add a Comment</h2>
+        <form id="comment-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="comment">Comment:</label>
+            <textarea id="comment" rows="4" required></textarea>
+
+            <button type="button" onclick="addComment()">Submit Comment</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
