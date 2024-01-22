@@ -45,7 +45,6 @@ body::before {
 .container {
   display: flex;
   flex: 1;
-  justify-content: space-around;
 }
 
 .column.side,
@@ -61,7 +60,7 @@ body::before {
 }
 
 .column.middle {
-  flex: 3; /* Adjusted to take 3/5 of the horizontal space */
+  flex: 3;
   margin: 3px;
 }
 
