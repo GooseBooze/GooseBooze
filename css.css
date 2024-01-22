@@ -9,9 +9,9 @@ body {
   position: relative;
   margin: 0;
   padding: 0;
-  min-height: 100vh; /* Set minimum height to 100% of the viewport height */
+  min-height: 100vh;
   display: flex;
-  flex-direction: column; /* Stack children in a column layout */
+  flex-direction: column;
 }
 
 body::before {
@@ -21,9 +21,9 @@ body::before {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+  background-color: rgba(0, 0, 0, 0.5);
   pointer-events: none;
-  z-index: -1; /* Place the overlay behind the content */
+  z-index: -1;
 }
 
 .header {
@@ -32,9 +32,9 @@ body::before {
   text-align: left;
   font-size: 28px;
   color: white;
-  margin-bottom: 10px; /* Increase the margin for better separation */
+  margin-bottom: 10px;
   display: flex;
-  justify-content: space-between; /* Align items on the header */
+  justify-content: space-between;
 }
 
 .HeaderImg {
@@ -44,14 +44,15 @@ body::before {
 
 .container {
   display: flex;
-  flex: 1; /* Take remaining vertical space */
+  flex: 1;
+  justify-content: space-around; /* Align columns with equal spacing */
 }
 
 .column.side,
 .column.middle {
   padding: 10px;
   display: flex;
-  flex-direction: column; /* Stack children in a column layout */
+  flex-direction: column;
 }
 
 .column.side {
@@ -69,5 +70,5 @@ body::before {
   padding: 1rem;
   background-color: #333;
   color: white;
-  border-top: 1px solid white; /* Add a border on top for separation */
+  border-top: 1px solid white;
 }
