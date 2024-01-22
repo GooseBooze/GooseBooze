@@ -1,80 +1,68 @@
 * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-image: url(https://images.unsplash.com/photo-1511884642898-4c92249e20b6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-    viewport-fit: 100vh;
-    /*https://unsplash.com/photos/aerial-shot-of-forest-2Hzmz15wGik*/
-    font-family: 'Cascadia Code', 'Consolas', 'Inconsolata';
-    margin: 0;
-    padding: 0;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-  }
-  
-  /* Style the header */
-  .header {
-    background-color: #444;
-    padding: 2px;
-    text-align: left;
-    font-size: 28px;
-    color: white;
-    margin-bottom: 3px;
-  }
+  box-sizing: border-box;
+}
 
-  /* icon style image for the header*/
-  .HeaderImg {
-    max-height: 30px;
-    max-width: 40px;
-  }
+body {
+  font-family: 'Cascadia Code', 'Consolas', 'Inconsolata', Arial, Helvetica, sans-serif;
+  background: url(https://images.unsplash.com/photo-1511884642898-4c92249e20b6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) center center fixed;
+  background-size: cover;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
 
-  /* Container for flexboxes */
-  .row {
-    display: -webkit-flex;
-    display: flex;
-  }
-  
-  /* Create three unequal columns that sits next to each other */
-  .column {
-    padding: 10px;
-    height: 84vh;
-  }
-  
-  /* Left and right column */
-  .column.side {
-     -webkit-flex: 1;
-     -ms-flex: 1;
-     flex: 1;
-     margin-top: 3px;
-     margin-left: 3px;
-     margin-right: 3px;
-  }
-  
-  /* Middle column */
-  .column.middle {
-    -webkit-flex: 2;
-    -ms-flex: 2;
-    flex: 2;
-    margin-top: 3px;
-    margin-left: 3px;
-    margin-right: 3px;
-  }
-  /* Style the footer */
-  .footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: #333;
-    color: white;
-    bottom: 0px;
-    border-spacing: 3px;
-  }
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+  pointer-events: none;
+  z-index: -1; /* Place the overlay behind the content */
+}
 
-  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-  @media (max-width: 600px) {
-    .row {
-      -webkit-flex-direction: column;
-      flex-direction: column;
-    }
-  }
+.header {
+  background-color: #333;
+  padding: 10px;
+  text-align: left;
+  font-size: 28px;
+  color: white;
+  margin-bottom: 10px; /* Increase the margin for better separation */
+  display: flex;
+  justify-content: space-between; /* Align items on the header */
+}
+
+.HeaderImg {
+  max-height: 30px;
+  max-width: 40px;
+}
+
+.column.side,
+.column.middle {
+  padding: 10px;
+  height: 84vh;
+}
+
+.column.side {
+  flex: 1;
+  margin-top: 3px;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.column.middle {
+  flex: 2;
+  margin-top: 3px;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #333;
+  color: white;
+  border-top: 1px solid white; /* Add a border on top for separation */
+}

@@ -3,24 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet"; href="css.css">
+  <link rel="stylesheet" href="style.css">
+  <!-- Link the navbar styles -->
   <link rel="stylesheet" href="navbar.css">
-  <link rel="stylesheet" href="">
-  <link rel="stylesheet" href="">
   <title>Text Forum</title>
-  <script src="nav-component.js"></script>
-  <script type="text/javascript">
-    function googleTranslateElementInit() {
-      new google.translate.TranslateElement({pageLanguage: 'no'}, 'google_translate_element');
-    }
-    </script>
-    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </head>
 <body>
 
-  <div class="header"; id="google_translate_element">
-    <h1>Gard's Nettside</h1>
-<div style="align-items: end;"><img src="Images/Goos.png" alt="" class="HeaderImg"></div>
+  <!-- Include your navbar component or code here -->
   <nav-component>
     <nav>
       <ul>
@@ -31,31 +21,34 @@
     </nav>
   </nav-component>
 
-</div>
-<div class="collumn middle">
-  <ol>
-    <li class="row">
-       <a href="thread.html">
-       <h4 class="title">
-        Thread 1
-       </h4>
-       <div class="bottom">
-        <p class="timestamp">
-          22/01/2024
-        </p>
-       </div>
+  <div class="header">
+    <h1>Gard's Nettside</h1>
+    <img src="Images/Goos.png" alt="Header Image" class="HeaderImg">
+  </div>
 
-       </a>
-    </li>
-      </a>
-   </li>
-  </ol>
-</div>
-</div>
-<div class="footer">
-  <p><i>Github</i><a href="https://github.com/GooseBooze"; style="color: rgba(0, 128, 0, 0.658)";>Gard N, Ulvestad</a></p>
-</div>
+  <div class="row">
+    <div class="column side">
+      <!-- Your content for the side column -->
+    </div>
+
+    <div class="column middle">
+      <ol>
+        <li class="row">
+          <a href="thread.html">
+            <h4 class="title">Thread 1</h4>
+            <div class="bottom">
+              <p class="timestamp">22/01/2024</p>
+            </div>
+          </a>
+        </li>
+        <!-- Add more list items for additional threads -->
+      </ol>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p><i>Github</i><a href="https://github.com/GooseBooze" style="color: rgba(0, 128, 0, 0.658)">Gard N, Ulvestad</a></p>
+  </div>
 
 </body>
-
 </html>
