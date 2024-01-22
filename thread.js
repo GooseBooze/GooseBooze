@@ -8,8 +8,9 @@ function submitComment() {
     var captcha = parseInt(captchaInput.value);
 
     // Validate captcha
-    if (isNaN(captcha) || captcha !== getCorrectCaptcha()) {
+    if (!isValidCaptcha(captcha)) {
         alert('Please solve the captcha correctly.');
+        updateCaptcha();
         return;
     }
 
@@ -19,6 +20,9 @@ function submitComment() {
 
         // Clear the input fields
         clearInputFields(nameInput, commentInput, captchaInput);
+
+        // Update the captcha for the next comment
+        updateCaptcha();
     } else {
         alert('Please enter both your name and a comment.');
     }
@@ -38,6 +42,11 @@ function clearInputFields(...inputs) {
     inputs.forEach(input => (input.value = ''));
 }
 
+function isValidCaptcha(userAnswer) {
+    var correctAnswer = getCorrectCaptcha();
+    return !isNaN(userAnswer) && userAnswer === correctAnswer;
+}
+
 function getCorrectCaptcha() {
     // Generate a simple addition problem for the captcha
     var num1 = Math.floor(Math.random() * 10) + 1;
@@ -50,7 +59,26 @@ function getCorrectCaptcha() {
     return num1 + num2;
 }
 
+function updateCaptcha() {
+    // Regenerate the captcha for the next comment
+    getCorrectCaptcha();
+}
+
 // Load existing comments from cookies when the page loads
 window.onload = function () {
     // Your existing code for loading comments here
 };
+
+function displayComment(comment) {
+    var commentSection = document.getElementById('comments');
+
+    var newComment = document.createElement('div');
+    newComment.classList.add('comment');
+    newComment.innerHTML = '<strong>' + comment.name + ':</strong> ' + comment.comment;
+
+    commentSection.appendChild(newComment);
+}
+
+function clearInputFields(...inputs) {
+    inputs.forEach(input => (input.value = ''));
+}
