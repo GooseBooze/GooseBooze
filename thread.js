@@ -9,6 +9,9 @@ function submitComment() {
 
     if (name && comment) {
         // Your existing comment submission logic here
+        saveComment({ name: name, comment: comment });
+
+        // Display the comment
         displayComment({ name: name, comment: comment });
 
         // Clear the input fields
@@ -16,6 +19,17 @@ function submitComment() {
     } else {
         alert('Please enter both your name and a comment.');
     }
+}
+
+function saveComment(comment) {
+    // Retrieve existing comments from cookies
+    var existingComments = getCommentsFromCookies();
+
+    // Add the new comment to the array
+    existingComments.push(comment);
+
+    // Save the updated comments back to cookies
+    setCommentsToCookies(existingComments);
 }
 
 function displayComment(comment) {
@@ -32,7 +46,22 @@ function clearInputFields(...inputs) {
     inputs.forEach(input => (input.value = ''));
 }
 
+function getCommentsFromCookies() {
+    var commentsCookie = document.cookie.replace(/(?:(?:^|.*;\s*)comments\s*=\s*([^;]*).*$)|^.*$/, "$1");
+    return commentsCookie ? JSON.parse(decodeURIComponent(commentsCookie)) : [];
+}
+
+function setCommentsToCookies(comments) {
+    var expirationDate = new Date();
+    expirationDate.setFullYear(expirationDate.getFullYear() + 1); // Expires in one year
+
+    document.cookie = 'comments=' + encodeURIComponent(JSON.stringify(comments)) + '; expires=' + expirationDate.toUTCString() + '; path=/';
+}
+
 // Load existing comments from cookies when the page loads
 window.onload = function () {
-    // Your existing code for loading comments here
+    var existingComments = getCommentsFromCookies();
+    existingComments.forEach(function (comment) {
+        displayComment(comment);
+    });
 };
