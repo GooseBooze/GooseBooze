@@ -39,7 +39,7 @@
   /* Create three unequal columns that sits next to each other */
   .column {
     padding: 10px;
-    height: 82vh;
+    height: 1rem;
   }
   
   /* Left and right column */
