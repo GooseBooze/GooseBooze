@@ -68,7 +68,7 @@
     background-color: #333;
     color: white;
     bottom: 0px;
-    border-spacing: 3px;
+    border-spacing: 1rem;
   }
 
   /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
