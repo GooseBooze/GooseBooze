@@ -1,31 +1,38 @@
 function submitComment() {
     var nameInput = document.getElementById('name');
     var commentInput = document.getElementById('comment');
+    var captchaInput = document.getElementById('captcha');
 
     var name = nameInput.value.trim();
     var comment = commentInput.value.trim();
+    var captcha = parseInt(captchaInput.value);
+
+    // Validate captcha
+    if (isNaN(captcha) || captcha !== getCorrectCaptcha()) {
+        alert('Please solve the captcha correctly.');
+        return;
+    }
 
     if (name && comment) {
-        // Create a unique identifier for the comment
-        var commentId = 'comment_' + Date.now();
-
-        // Create a comment object with name and comment text
-        var commentObject = {
-            name: name,
-            comment: comment
-        };
-
-        // Save the comment to a cookie
-        document.cookie = commentId + '=' + JSON.stringify(commentObject) + '; expires=' + getCookieExpiration();
-
-        // Add the comment to the comments section
-        displayComment(commentObject);
+        // Your existing comment submission logic here
 
         // Clear the input fields
-        clearInputFields(nameInput, commentInput);
+        clearInputFields(nameInput, commentInput, captchaInput);
     } else {
         alert('Please enter both your name and a comment.');
     }
+}
+
+function getCorrectCaptcha() {
+    // Generate a simple addition problem for the captcha
+    var num1 = Math.floor(Math.random() * 10) + 1;
+    var num2 = Math.floor(Math.random() * 10) + 1;
+
+    // Display the captcha question in the form
+    document.getElementById('captcha-question').innerText = num1 + ' + ' + num2;
+
+    // Return the correct answer
+    return num1 + num2;
 }
 
 function displayComment(comment) {
