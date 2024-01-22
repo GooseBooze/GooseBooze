@@ -50,18 +50,18 @@ body::before {
 .column.side,
 .column.middle {
   padding: 10px;
+  flex: 1;
+  margin: 3px;
   display: flex;
   flex-direction: column;
 }
 
 .column.side {
-  flex: 1;
-  margin: 3px;
+  background-color: lightblue; /* Just for visualization */
 }
 
 .column.middle {
-  flex: 3;
-  margin: 3px;
+  background-color: lightgreen; /* Just for visualization */
 }
 
 .footer {
