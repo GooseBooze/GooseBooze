@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="thread.css">
     <title>Comment Section</title>
 </head>
 <body>
@@ -17,14 +17,14 @@
 
     <div id="comment-form">
         <h2>Add a Comment</h2>
-        <form id="comment-form">
+        <form>
             <label for="name">Name:</label>
             <input type="text" id="name" required>
 
             <label for="comment">Comment:</label>
             <textarea id="comment" rows="4" required></textarea>
 
-            <button type="button" onclick="addComment()">Submit Comment</button>
+            <button type="button" onclick="submitComment()">Submit Comment</button>
         </form>
     </div>
 

@@ -3,13 +3,18 @@ body {
     margin: 20px;
 }
 
+#comments-section {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
 #comments {
-    margin-bottom: 20px;
+    margin-top: 10px;
 }
 
 #comment-form {
     max-width: 600px;
-    margin: 0 auto;
+    margin: 20px auto;
 }
 
 label {
