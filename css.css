@@ -14,18 +14,6 @@ body {
   flex-direction: column;
 }
 
-body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  pointer-events: none;
-  z-index: -1;
-}
-
 .header {
   background-color: #333;
   padding: 10px;
@@ -57,11 +45,11 @@ body::before {
 }
 
 .column.side {
-  background-color: lightblue; /* Just for visualization */
+  background-color: rgba(89, 94, 89, 0.534); /* Just for visualization */
 }
 
 .column.middle {
-  background-color: lightgreen; /* Just for visualization */
+  background-color: rgba(89, 94, 89, 0.534); /* Just for visualization */
 }
 
 .footer {
